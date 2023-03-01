@@ -23,7 +23,7 @@ extension API: TargetType {
     var path: String {
         switch self {
         case .getUsers:
-            return "movie/popular"
+            return "/users"
         case .getAlbums(let userID):
             return "/users/\(userID)/albums"
         case .getPhotos(let albumID):
