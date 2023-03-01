@@ -8,5 +8,5 @@
 import Foundation
 
 class UsersData{
-    public static var data: [User]?
+    public static var dataArray: [User]?
 }

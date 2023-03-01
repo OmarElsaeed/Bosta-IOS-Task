@@ -18,7 +18,11 @@ class APIService{
             switch result {
             case .success(let response):
                 let json = try! JSONSerialization.jsonObject(with: response.data,options: [])
-                print(json)
+                //print(json)
+                
+                let users = try! JSONDecoder().decode([User].self, from: response.data)
+                UsersData.dataArray = users
+                //print(UsersData.dataArray)
                 
             case .failure(let error): print(error.localizedDescription)
             }
