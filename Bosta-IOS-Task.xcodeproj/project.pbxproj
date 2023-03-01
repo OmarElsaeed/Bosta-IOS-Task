@@ -12,6 +12,10 @@
 		009A59B329AFADAB00D3A3F7 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 009A59B229AFADAB00D3A3F7 /* ReactiveMoya */; };
 		009A59B529AFADAB00D3A3F7 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 009A59B429AFADAB00D3A3F7 /* RxMoya */; };
 		009A59B729AFADE100D3A3F7 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A59B629AFADE100D3A3F7 /* APIServices.swift */; };
+		009A59B929AFB13200D3A3F7 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A59B829AFB13200D3A3F7 /* API.swift */; };
+		009A59BD29AFB59800D3A3F7 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A59BC29AFB59800D3A3F7 /* UserData.swift */; };
+		009A59BF29AFB5AF00D3A3F7 /* PhotosData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A59BE29AFB5AF00D3A3F7 /* PhotosData.swift */; };
+		009A59C129AFB5C300D3A3F7 /* AlbumsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A59C029AFB5C300D3A3F7 /* AlbumsData.swift */; };
 		00D3A23629AF6B91003A13A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D3A23529AF6B91003A13A6 /* AppDelegate.swift */; };
 		00D3A23F29AF6B92003A13A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D3A23E29AF6B92003A13A6 /* Assets.xcassets */; };
 		00D3A24229AF6B92003A13A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D3A24029AF6B92003A13A6 /* LaunchScreen.storyboard */; };
@@ -26,6 +30,10 @@
 
 /* Begin PBXFileReference section */
 		009A59B629AFADE100D3A3F7 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIServices.swift; path = "Bosta-IOS-Task/APIServices.swift"; sourceTree = SOURCE_ROOT; };
+		009A59B829AFB13200D3A3F7 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = API.swift; path = "Bosta-IOS-Task/API.swift"; sourceTree = SOURCE_ROOT; };
+		009A59BC29AFB59800D3A3F7 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		009A59BE29AFB5AF00D3A3F7 /* PhotosData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosData.swift; sourceTree = "<group>"; };
+		009A59C029AFB5C300D3A3F7 /* AlbumsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsData.swift; sourceTree = "<group>"; };
 		00D3A23229AF6B91003A13A6 /* Bosta-IOS-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bosta-IOS-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00D3A23529AF6B91003A13A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00D3A23E29AF6B92003A13A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +63,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		009A59BA29AFB57100D3A3F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				00D3A25B29AF9F05003A13A6 /* Album.swift */,
+				00D3A25D29AF9F6A003A13A6 /* User.swift */,
+				00D3A25F29AF9F7A003A13A6 /* Photos.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		009A59BB29AFB58A00D3A3F7 /* ModelData */ = {
+			isa = PBXGroup;
+			children = (
+				009A59BC29AFB59800D3A3F7 /* UserData.swift */,
+				009A59BE29AFB5AF00D3A3F7 /* PhotosData.swift */,
+				009A59C029AFB5C300D3A3F7 /* AlbumsData.swift */,
+			);
+			path = ModelData;
+			sourceTree = "<group>";
+		};
 		00D3A22929AF6B91003A13A6 = {
 			isa = PBXGroup;
 			children = (
@@ -108,9 +136,8 @@
 		00D3A25029AF7569003A13A6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				00D3A25B29AF9F05003A13A6 /* Album.swift */,
-				00D3A25D29AF9F6A003A13A6 /* User.swift */,
-				00D3A25F29AF9F7A003A13A6 /* Photos.swift */,
+				009A59BB29AFB58A00D3A3F7 /* ModelData */,
+				009A59BA29AFB57100D3A3F7 /* Models */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -134,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				009A59B629AFADE100D3A3F7 /* APIServices.swift */,
+				009A59B829AFB13200D3A3F7 /* API.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -247,8 +275,12 @@
 				009A59B729AFADE100D3A3F7 /* APIServices.swift in Sources */,
 				00D3A25E29AF9F6A003A13A6 /* User.swift in Sources */,
 				00D3A25729AF7FDA003A13A6 /* ProfileVC+TableView.swift in Sources */,
+				009A59C129AFB5C300D3A3F7 /* AlbumsData.swift in Sources */,
 				00D3A25A29AF9957003A13A6 /* ProfileViewModel.swift in Sources */,
 				00D3A23629AF6B91003A13A6 /* AppDelegate.swift in Sources */,
+				009A59B929AFB13200D3A3F7 /* API.swift in Sources */,
+				009A59BF29AFB5AF00D3A3F7 /* PhotosData.swift in Sources */,
+				009A59BD29AFB59800D3A3F7 /* UserData.swift in Sources */,
 				00D3A26029AF9F7A003A13A6 /* Photos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
