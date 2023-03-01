@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		009A59AF29AFADAB00D3A3F7 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 009A59AE29AFADAB00D3A3F7 /* CombineMoya */; };
+		009A59B129AFADAB00D3A3F7 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 009A59B029AFADAB00D3A3F7 /* Moya */; };
+		009A59B329AFADAB00D3A3F7 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 009A59B229AFADAB00D3A3F7 /* ReactiveMoya */; };
+		009A59B529AFADAB00D3A3F7 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 009A59B429AFADAB00D3A3F7 /* RxMoya */; };
+		009A59B729AFADE100D3A3F7 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A59B629AFADE100D3A3F7 /* APIServices.swift */; };
 		00D3A23629AF6B91003A13A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D3A23529AF6B91003A13A6 /* AppDelegate.swift */; };
 		00D3A23F29AF6B92003A13A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D3A23E29AF6B92003A13A6 /* Assets.xcassets */; };
 		00D3A24229AF6B92003A13A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D3A24029AF6B92003A13A6 /* LaunchScreen.storyboard */; };
@@ -20,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		009A59B629AFADE100D3A3F7 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIServices.swift; path = "Bosta-IOS-Task/APIServices.swift"; sourceTree = SOURCE_ROOT; };
 		00D3A23229AF6B91003A13A6 /* Bosta-IOS-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bosta-IOS-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00D3A23529AF6B91003A13A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00D3A23E29AF6B92003A13A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +45,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				009A59B129AFADAB00D3A3F7 /* Moya in Frameworks */,
+				009A59AF29AFADAB00D3A3F7 /* CombineMoya in Frameworks */,
+				009A59B529AFADAB00D3A3F7 /* RxMoya in Frameworks */,
+				009A59B329AFADAB00D3A3F7 /* ReactiveMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +133,7 @@
 		00D3A25329AF7595003A13A6 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				009A59B629AFADE100D3A3F7 /* APIServices.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -167,6 +178,12 @@
 			dependencies = (
 			);
 			name = "Bosta-IOS-Task";
+			packageProductDependencies = (
+				009A59AE29AFADAB00D3A3F7 /* CombineMoya */,
+				009A59B029AFADAB00D3A3F7 /* Moya */,
+				009A59B229AFADAB00D3A3F7 /* ReactiveMoya */,
+				009A59B429AFADAB00D3A3F7 /* RxMoya */,
+			);
 			productName = "Bosta-IOS-Task";
 			productReference = 00D3A23229AF6B91003A13A6 /* Bosta-IOS-Task.app */;
 			productType = "com.apple.product-type.application";
@@ -195,6 +212,9 @@
 				Base,
 			);
 			mainGroup = 00D3A22929AF6B91003A13A6;
+			packageReferences = (
+				009A59AD29AFADAB00D3A3F7 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 00D3A23329AF6B91003A13A6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -224,6 +244,7 @@
 			files = (
 				00D3A25C29AF9F05003A13A6 /* Album.swift in Sources */,
 				00D3A24D29AF6DBC003A13A6 /* ProfileVC.swift in Sources */,
+				009A59B729AFADE100D3A3F7 /* APIServices.swift in Sources */,
 				00D3A25E29AF9F6A003A13A6 /* User.swift in Sources */,
 				00D3A25729AF7FDA003A13A6 /* ProfileVC+TableView.swift in Sources */,
 				00D3A25A29AF9957003A13A6 /* ProfileViewModel.swift in Sources */,
@@ -436,6 +457,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		009A59AD29AFADAB00D3A3F7 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		009A59AE29AFADAB00D3A3F7 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 009A59AD29AFADAB00D3A3F7 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		009A59B029AFADAB00D3A3F7 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 009A59AD29AFADAB00D3A3F7 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		009A59B229AFADAB00D3A3F7 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 009A59AD29AFADAB00D3A3F7 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		009A59B429AFADAB00D3A3F7 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 009A59AD29AFADAB00D3A3F7 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 00D3A22A29AF6B91003A13A6 /* Project object */;
 }
