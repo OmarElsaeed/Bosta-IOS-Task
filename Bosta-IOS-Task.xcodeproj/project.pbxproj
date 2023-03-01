@@ -12,6 +12,11 @@
 		00D3A24229AF6B92003A13A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D3A24029AF6B92003A13A6 /* LaunchScreen.storyboard */; };
 		00D3A24D29AF6DBC003A13A6 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D3A24B29AF6DBC003A13A6 /* ProfileVC.swift */; };
 		00D3A24E29AF6DBC003A13A6 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D3A24C29AF6DBC003A13A6 /* ProfileVC.xib */; };
+		00D3A25729AF7FDA003A13A6 /* ProfileVC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D3A25629AF7FDA003A13A6 /* ProfileVC+TableView.swift */; };
+		00D3A25A29AF9957003A13A6 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D3A25929AF9957003A13A6 /* ProfileViewModel.swift */; };
+		00D3A25C29AF9F05003A13A6 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D3A25B29AF9F05003A13A6 /* Album.swift */; };
+		00D3A25E29AF9F6A003A13A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D3A25D29AF9F6A003A13A6 /* User.swift */; };
+		00D3A26029AF9F7A003A13A6 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D3A25F29AF9F7A003A13A6 /* Photos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		00D3A24329AF6B92003A13A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00D3A24B29AF6DBC003A13A6 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		00D3A24C29AF6DBC003A13A6 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		00D3A25629AF7FDA003A13A6 /* ProfileVC+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileVC+TableView.swift"; sourceTree = "<group>"; };
+		00D3A25929AF9957003A13A6 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		00D3A25B29AF9F05003A13A6 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		00D3A25D29AF9F6A003A13A6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		00D3A25F29AF9F7A003A13A6 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +64,15 @@
 		00D3A23429AF6B91003A13A6 /* Bosta-IOS-Task */ = {
 			isa = PBXGroup;
 			children = (
-				00D3A24929AF6D94003A13A6 /* Profile */,
+				00D3A25829AF9921003A13A6 /* ViewModel */,
+				00D3A25529AF75BC003A13A6 /* Config */,
+				00D3A25429AF75A7003A13A6 /* Resources */,
+				00D3A25329AF7595003A13A6 /* Networking */,
+				00D3A25229AF7583003A13A6 /* Classes */,
+				00D3A25129AF757E003A13A6 /* View */,
+				00D3A25029AF7569003A13A6 /* Model */,
+				00D3A24F29AF7556003A13A6 /* Controllers */,
 				00D3A23529AF6B91003A13A6 /* AppDelegate.swift */,
-				00D3A23E29AF6B92003A13A6 /* Assets.xcassets */,
-				00D3A24029AF6B92003A13A6 /* LaunchScreen.storyboard */,
-				00D3A24329AF6B92003A13A6 /* Info.plist */,
 			);
 			path = "Bosta-IOS-Task";
 			sourceTree = "<group>";
@@ -67,9 +81,74 @@
 			isa = PBXGroup;
 			children = (
 				00D3A24B29AF6DBC003A13A6 /* ProfileVC.swift */,
+				00D3A25629AF7FDA003A13A6 /* ProfileVC+TableView.swift */,
 				00D3A24C29AF6DBC003A13A6 /* ProfileVC.xib */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		00D3A24F29AF7556003A13A6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				00D3A24929AF6D94003A13A6 /* Profile */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		00D3A25029AF7569003A13A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00D3A25B29AF9F05003A13A6 /* Album.swift */,
+				00D3A25D29AF9F6A003A13A6 /* User.swift */,
+				00D3A25F29AF9F7A003A13A6 /* Photos.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00D3A25129AF757E003A13A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00D3A24029AF6B92003A13A6 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00D3A25229AF7583003A13A6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		00D3A25329AF7595003A13A6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		00D3A25429AF75A7003A13A6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				00D3A23E29AF6B92003A13A6 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		00D3A25529AF75BC003A13A6 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				00D3A24329AF6B92003A13A6 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		00D3A25829AF9921003A13A6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				00D3A25929AF9957003A13A6 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +222,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00D3A25C29AF9F05003A13A6 /* Album.swift in Sources */,
 				00D3A24D29AF6DBC003A13A6 /* ProfileVC.swift in Sources */,
+				00D3A25E29AF9F6A003A13A6 /* User.swift in Sources */,
+				00D3A25729AF7FDA003A13A6 /* ProfileVC+TableView.swift in Sources */,
+				00D3A25A29AF9957003A13A6 /* ProfileViewModel.swift in Sources */,
 				00D3A23629AF6B91003A13A6 /* AppDelegate.swift in Sources */,
+				00D3A26029AF9F7A003A13A6 /* Photos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +368,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Bosta-IOS-Task/Info.plist";
+				INFOPLIST_FILE = "/Users/a/Desktop/Bosta-IOS-Task/Bosta-IOS-Task/Config/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -311,7 +395,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Bosta-IOS-Task/Info.plist";
+				INFOPLIST_FILE = "/Users/a/Desktop/Bosta-IOS-Task/Bosta-IOS-Task/Config/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";

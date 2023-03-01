@@ -8,11 +8,15 @@
 import UIKit
 
 class ProfileVC: UIViewController {
+    
+    var profileViewModel = ProfileViewModel()
 
+    @IBOutlet weak var albumsTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.title = "Profile"
     }
 
 
