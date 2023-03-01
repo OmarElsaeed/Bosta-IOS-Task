@@ -9,4 +9,17 @@ import Foundation
 
 class ProfileViewModel{
     
+    func numberOfSections() -> Int{
+        return 0
+    }
+    
+    func numberOfRows(in secion: Int) -> Int{
+        
+        return (UsersData.dataArray?.count)!
+    }
+    
+    func getUserData(){
+        APIService().readUsers()
+    }
+    
 }
