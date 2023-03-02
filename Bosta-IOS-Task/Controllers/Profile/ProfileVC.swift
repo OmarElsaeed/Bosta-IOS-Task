@@ -24,17 +24,13 @@ class ProfileVC: UIViewController, UITableViewDelegate {
 
         // Do any additional setup after loading the view.
         self.title = "Profile"
-        
-        albumsTableView.register(UINib(nibName: "myCell", bundle: nil), forCellReuseIdentifier: "cell")
         profileViewModel.fetchUsers(profileMV: profileViewModel.self)
         //=========================================================
+        albumsTableView.register(UINib(nibName: "myCell", bundle: nil), forCellReuseIdentifier: "cell")
+        
         profileViewModel.users.bind(to: albumsTableView.rx.items(cellIdentifier: "cell",cellType: myCell.self)){
             (tableView, user, cell) in
-            cell.label.text = user.name
-            self.userNameLabel.text = self.profileViewModel.returnedUers[0].name
-            let address = self.profileViewModel.returnedUers[0].address
-            self.userAdressLabel.text = address.city + address.street + address.suite + address.zipcode
-            print("Omar Elsaeed")
+            cell.textLabel?.text = user.name
         }.disposed(by: disposalBag)
         //=========================================================
         albumsTableView.rx.modelSelected(Album.self).subscribe(onNext: { album in
