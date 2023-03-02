@@ -14,6 +14,10 @@ struct User: Codable {
     let address: Address
     let phone, website: String
     let company: Company
+    
+    func readAlbums(profileVM: ProfileViewModel){
+        APIService().readAlbumes(profileMV: profileVM)
+    }
 }
 
 // MARK: - Address

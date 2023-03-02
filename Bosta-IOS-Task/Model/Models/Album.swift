@@ -11,13 +11,11 @@ import Foundation
 
 
 struct Album: Codable {
-    let albumID, id: Int
+    let userID, id: Int
     let title: String
-    let url, thumbnailURL: String
 
     enum CodingKeys: String, CodingKey {
-        case albumID = "albumId"
-        case id, title, url
-        case thumbnailURL = "thumbnailUrl"
+        case userID = "userId"
+        case id, title
     }
 }

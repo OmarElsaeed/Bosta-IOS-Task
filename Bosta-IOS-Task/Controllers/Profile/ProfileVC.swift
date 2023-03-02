@@ -11,9 +11,11 @@ import RxCocoa
 
 class ProfileVC: UIViewController, UITableViewDelegate {
     
-    var profileViewModel = ProfileViewModel()
+    private var profileViewModel = ProfileViewModel()
     let disposalBag = DisposeBag()
 
+    @IBOutlet weak var userAdressLabel: UILabel!
+    @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var albumsTableView: UITableView!
     override func viewDidLoad() {
         
@@ -24,25 +26,23 @@ class ProfileVC: UIViewController, UITableViewDelegate {
         self.title = "Profile"
         
         albumsTableView.register(UINib(nibName: "myCell", bundle: nil), forCellReuseIdentifier: "cell")
-        
+        profileViewModel.fetchUsers(profileMV: profileViewModel.self)
+        //=========================================================
         profileViewModel.users.bind(to: albumsTableView.rx.items(cellIdentifier: "cell",cellType: myCell.self)){
             (tableView, user, cell) in
-            cell.textLabel?.text = user.name
+            cell.label.text = user.name
+            self.userNameLabel.text = self.profileViewModel.returnedUers[0].name
+            let address = self.profileViewModel.returnedUers[0].address
+            self.userAdressLabel.text = address.city + address.street + address.suite + address.zipcode
             print("Omar Elsaeed")
         }.disposed(by: disposalBag)
-        
-        albumsTableView.rx.modelSelected(User.self).subscribe(onNext: { user in
-                    print("SelectedItem: \(user.name)")
+        //=========================================================
+        albumsTableView.rx.modelSelected(Album.self).subscribe(onNext: { album in
+            print("SelectedItem: \(album.title)")
                 }).disposed(by: disposalBag)
+
+      //  print(("profileViewModel.returnedUers = \(profileViewModel.users)"))
         
-        profileViewModel.fetchUsers(profileMV: profileViewModel.self)
-        print(("profileViewModel.returnedUers = \(profileViewModel.users)"))
-        
-        
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        //profileViewModel.getUserData()
         
     }
 

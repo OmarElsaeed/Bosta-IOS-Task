@@ -11,25 +11,18 @@ import RxSwift
 
 class ProfileViewModel{
     
-    public  var returnedUers = [User]()
-    public  var users = PublishSubject<[User]>()
-    public let ay = Observable.just(["omar","elaasas","ajlsaks"])
+//    public var returnedUers = [User]()
+    public var users = BehaviorSubject(value: [User]())
+//    public var returnedAlbumes = [Album]()
+    public var albums = BehaviorSubject(value: [Album]())
     
-//    func numberOfSections() -> Int{
-//        return 0
-//    }
-//
-//    func numberOfRows(in secion: Int) -> Int{
-//
-//        return (UsersData.dataArray?.count)!
-//    }
     
     
     func fetchUsers(profileMV: ProfileViewModel){
-        print("returned userr = \(returnedUers)")
-        
-        print("returned userr = \(returnedUers)")
         APIService().readUsers(profileMV: profileMV)
+        
     }
+    
+    
     
 }

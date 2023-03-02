@@ -10,7 +10,7 @@ import Moya
 
 enum API {
     case getUsers
-    case getAlbums(userID: String)
+    case getAlbums(userID: Int)
     case getPhotos(albumID: String)
 }
 
