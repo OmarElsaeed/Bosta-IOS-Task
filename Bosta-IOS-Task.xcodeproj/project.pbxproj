@@ -16,6 +16,9 @@
 		009A59BD29AFB59800D3A3F7 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A59BC29AFB59800D3A3F7 /* UserData.swift */; };
 		009A59BF29AFB5AF00D3A3F7 /* PhotosData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A59BE29AFB5AF00D3A3F7 /* PhotosData.swift */; };
 		009A59C129AFB5C300D3A3F7 /* AlbumsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A59C029AFB5C300D3A3F7 /* AlbumsData.swift */; };
+		009A59C429AFE3F400D3A3F7 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 009A59C329AFE3F400D3A3F7 /* RxCocoa */; };
+		009A59C729AFFE3400D3A3F7 /* myCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A59C529AFFE3400D3A3F7 /* myCell.swift */; };
+		009A59C829AFFE3400D3A3F7 /* myCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009A59C629AFFE3400D3A3F7 /* myCell.xib */; };
 		00D3A23629AF6B91003A13A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D3A23529AF6B91003A13A6 /* AppDelegate.swift */; };
 		00D3A23F29AF6B92003A13A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D3A23E29AF6B92003A13A6 /* Assets.xcassets */; };
 		00D3A24229AF6B92003A13A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D3A24029AF6B92003A13A6 /* LaunchScreen.storyboard */; };
@@ -34,6 +37,8 @@
 		009A59BC29AFB59800D3A3F7 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		009A59BE29AFB5AF00D3A3F7 /* PhotosData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosData.swift; sourceTree = "<group>"; };
 		009A59C029AFB5C300D3A3F7 /* AlbumsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsData.swift; sourceTree = "<group>"; };
+		009A59C529AFFE3400D3A3F7 /* myCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCell.swift; sourceTree = "<group>"; };
+		009A59C629AFFE3400D3A3F7 /* myCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = myCell.xib; sourceTree = "<group>"; };
 		00D3A23229AF6B91003A13A6 /* Bosta-IOS-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bosta-IOS-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00D3A23529AF6B91003A13A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00D3A23E29AF6B92003A13A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +60,7 @@
 			files = (
 				009A59B129AFADAB00D3A3F7 /* Moya in Frameworks */,
 				009A59AF29AFADAB00D3A3F7 /* CombineMoya in Frameworks */,
+				009A59C429AFE3F400D3A3F7 /* RxCocoa in Frameworks */,
 				009A59B529AFADAB00D3A3F7 /* RxMoya in Frameworks */,
 				009A59B329AFADAB00D3A3F7 /* ReactiveMoya in Frameworks */,
 			);
@@ -106,7 +112,6 @@
 				00D3A25529AF75BC003A13A6 /* Config */,
 				00D3A25429AF75A7003A13A6 /* Resources */,
 				00D3A25329AF7595003A13A6 /* Networking */,
-				00D3A25229AF7583003A13A6 /* Classes */,
 				00D3A25129AF757E003A13A6 /* View */,
 				00D3A25029AF7569003A13A6 /* Model */,
 				00D3A24F29AF7556003A13A6 /* Controllers */,
@@ -121,6 +126,8 @@
 				00D3A24B29AF6DBC003A13A6 /* ProfileVC.swift */,
 				00D3A25629AF7FDA003A13A6 /* ProfileVC+TableView.swift */,
 				00D3A24C29AF6DBC003A13A6 /* ProfileVC.xib */,
+				009A59C529AFFE3400D3A3F7 /* myCell.swift */,
+				009A59C629AFFE3400D3A3F7 /* myCell.xib */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -148,13 +155,6 @@
 				00D3A24029AF6B92003A13A6 /* LaunchScreen.storyboard */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		00D3A25229AF7583003A13A6 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		00D3A25329AF7595003A13A6 /* Networking */ = {
@@ -211,6 +211,7 @@
 				009A59B029AFADAB00D3A3F7 /* Moya */,
 				009A59B229AFADAB00D3A3F7 /* ReactiveMoya */,
 				009A59B429AFADAB00D3A3F7 /* RxMoya */,
+				009A59C329AFE3F400D3A3F7 /* RxCocoa */,
 			);
 			productName = "Bosta-IOS-Task";
 			productReference = 00D3A23229AF6B91003A13A6 /* Bosta-IOS-Task.app */;
@@ -242,6 +243,7 @@
 			mainGroup = 00D3A22929AF6B91003A13A6;
 			packageReferences = (
 				009A59AD29AFADAB00D3A3F7 /* XCRemoteSwiftPackageReference "Moya" */,
+				009A59C229AFE3F400D3A3F7 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 00D3A23329AF6B91003A13A6 /* Products */;
 			projectDirPath = "";
@@ -258,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00D3A24E29AF6DBC003A13A6 /* ProfileVC.xib in Resources */,
+				009A59C829AFFE3400D3A3F7 /* myCell.xib in Resources */,
 				00D3A24229AF6B92003A13A6 /* LaunchScreen.storyboard in Resources */,
 				00D3A23F29AF6B92003A13A6 /* Assets.xcassets in Resources */,
 			);
@@ -273,6 +276,7 @@
 				00D3A25C29AF9F05003A13A6 /* Album.swift in Sources */,
 				00D3A24D29AF6DBC003A13A6 /* ProfileVC.swift in Sources */,
 				009A59B729AFADE100D3A3F7 /* APIServices.swift in Sources */,
+				009A59C729AFFE3400D3A3F7 /* myCell.swift in Sources */,
 				00D3A25E29AF9F6A003A13A6 /* User.swift in Sources */,
 				00D3A25729AF7FDA003A13A6 /* ProfileVC+TableView.swift in Sources */,
 				009A59C129AFB5C300D3A3F7 /* AlbumsData.swift in Sources */,
@@ -499,6 +503,14 @@
 				kind = branch;
 			};
 		};
+		009A59C229AFE3F400D3A3F7 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -521,6 +533,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 009A59AD29AFADAB00D3A3F7 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = RxMoya;
+		};
+		009A59C329AFE3F400D3A3F7 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 009A59C229AFE3F400D3A3F7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

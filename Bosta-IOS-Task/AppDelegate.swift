@@ -9,6 +9,7 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    let profileViewModel = ProfileViewModel()
 
     var window: UIWindow?
 
@@ -23,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-  
+    
 
 }
 

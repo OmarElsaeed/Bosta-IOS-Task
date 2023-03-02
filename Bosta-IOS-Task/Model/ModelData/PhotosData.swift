@@ -8,5 +8,5 @@
 import Foundation
 
 class PhotosData{
-    public static var data: [Photo]?
+    public static var dataArray: [Photo]?
 }

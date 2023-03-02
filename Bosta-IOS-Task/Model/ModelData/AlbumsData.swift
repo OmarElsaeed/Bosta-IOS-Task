@@ -8,5 +8,6 @@
 import Foundation
 
 class AlbumsData{
-    public static var data: [Album]?
+    public static var dataArray: [Album]?
+    
 }

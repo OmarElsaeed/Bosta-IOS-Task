@@ -6,20 +6,30 @@
 //
 
 import Foundation
+import RxCocoa
+import RxSwift 
 
 class ProfileViewModel{
     
-    func numberOfSections() -> Int{
-        return 0
-    }
+    public  var returnedUers = [User]()
+    public  var users = PublishSubject<[User]>()
+    public let ay = Observable.just(["omar","elaasas","ajlsaks"])
     
-    func numberOfRows(in secion: Int) -> Int{
+//    func numberOfSections() -> Int{
+//        return 0
+//    }
+//
+//    func numberOfRows(in secion: Int) -> Int{
+//
+//        return (UsersData.dataArray?.count)!
+//    }
+    
+    
+    func fetchUsers(profileMV: ProfileViewModel){
+        print("returned userr = \(returnedUers)")
         
-        return (UsersData.dataArray?.count)!
-    }
-    
-    func getUserData(){
-        APIService().readUsers()
+        print("returned userr = \(returnedUers)")
+        APIService().readUsers(profileMV: profileMV)
     }
     
 }
