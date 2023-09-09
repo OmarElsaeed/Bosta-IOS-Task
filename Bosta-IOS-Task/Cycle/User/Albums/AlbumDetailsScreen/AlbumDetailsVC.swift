@@ -1,24 +1,21 @@
 //
-//  ProfileVC.swift
+//  AlbumDetailsVC.swift
 //  Bosta-IOS-Task
 //
-//  Created by Omar-Mac on 01/03/2023.
+//  Created by Omar-Mac on 09/09/2023.
 //
 
 import UIKit
 
-class ProfileVC: UIViewController {
-    
-    var profileViewModel = ProfileViewModel()
+class AlbumDetailsVC: UIViewController {
+    var albumID = 0
 
-    @IBOutlet weak var albumsTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(albumID)
         // Do any additional setup after loading the view.
-        self.title = "Profile"
     }
-
+   
 
     /*
     // MARK: - Navigation
