@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0043AF2B29B102D100BE29C6 /* AlbumDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0043AF2929B102D100BE29C6 /* AlbumDetailsVC.swift */; };
+		0043AF2C29B102D100BE29C6 /* AlbumDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0043AF2A29B102D100BE29C6 /* AlbumDetailsVC.xib */; };
 		009A59AF29AFADAB00D3A3F7 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 009A59AE29AFADAB00D3A3F7 /* CombineMoya */; };
 		009A59B129AFADAB00D3A3F7 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 009A59B029AFADAB00D3A3F7 /* Moya */; };
 		009A59B329AFADAB00D3A3F7 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 009A59B229AFADAB00D3A3F7 /* ReactiveMoya */; };
@@ -24,7 +26,6 @@
 		00D3A24229AF6B92003A13A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D3A24029AF6B92003A13A6 /* LaunchScreen.storyboard */; };
 		00D3A24D29AF6DBC003A13A6 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D3A24B29AF6DBC003A13A6 /* ProfileVC.swift */; };
 		00D3A24E29AF6DBC003A13A6 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D3A24C29AF6DBC003A13A6 /* ProfileVC.xib */; };
-		00D3A25729AF7FDA003A13A6 /* ProfileVC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D3A25629AF7FDA003A13A6 /* ProfileVC+TableView.swift */; };
 		00D3A25A29AF9957003A13A6 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D3A25929AF9957003A13A6 /* ProfileViewModel.swift */; };
 		00D3A25C29AF9F05003A13A6 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D3A25B29AF9F05003A13A6 /* Album.swift */; };
 		00D3A25E29AF9F6A003A13A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D3A25D29AF9F6A003A13A6 /* User.swift */; };
@@ -32,8 +33,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0043AF2929B102D100BE29C6 /* AlbumDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsVC.swift; sourceTree = "<group>"; };
+		0043AF2A29B102D100BE29C6 /* AlbumDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumDetailsVC.xib; sourceTree = "<group>"; };
 		009A59B629AFADE100D3A3F7 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIServices.swift; path = "Bosta-IOS-Task/APIServices.swift"; sourceTree = SOURCE_ROOT; };
-		009A59B829AFB13200D3A3F7 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = API.swift; path = "Bosta-IOS-Task/API.swift"; sourceTree = SOURCE_ROOT; };
+		009A59B829AFB13200D3A3F7 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = API.swift; path = "Bosta-IOS-Task/Shared/Networking/API.swift"; sourceTree = SOURCE_ROOT; };
 		009A59BC29AFB59800D3A3F7 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		009A59BE29AFB5AF00D3A3F7 /* PhotosData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosData.swift; sourceTree = "<group>"; };
 		009A59C029AFB5C300D3A3F7 /* AlbumsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsData.swift; sourceTree = "<group>"; };
@@ -46,7 +49,6 @@
 		00D3A24329AF6B92003A13A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00D3A24B29AF6DBC003A13A6 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		00D3A24C29AF6DBC003A13A6 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
-		00D3A25629AF7FDA003A13A6 /* ProfileVC+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileVC+TableView.swift"; sourceTree = "<group>"; };
 		00D3A25929AF9957003A13A6 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		00D3A25B29AF9F05003A13A6 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		00D3A25D29AF9F6A003A13A6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -69,6 +71,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0043AF2829B102AA00BE29C6 /* AlbumDetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0043AF2929B102D100BE29C6 /* AlbumDetailsVC.swift */,
+				0043AF2A29B102D100BE29C6 /* AlbumDetailsVC.xib */,
+			);
+			path = AlbumDetailsScreen;
+			sourceTree = "<group>";
+		};
 		009A59BA29AFB57100D3A3F7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,36 +119,23 @@
 		00D3A23429AF6B91003A13A6 /* Bosta-IOS-Task */ = {
 			isa = PBXGroup;
 			children = (
-				00D3A25829AF9921003A13A6 /* ViewModel */,
-				00D3A25529AF75BC003A13A6 /* Config */,
+				00F7B7FF2AA9308600970BF4 /* Shared */,
+				00F7B8002AA9309300970BF4 /* Cycle */,
 				00D3A25429AF75A7003A13A6 /* Resources */,
-				00D3A25329AF7595003A13A6 /* Networking */,
-				00D3A25129AF757E003A13A6 /* View */,
-				00D3A25029AF7569003A13A6 /* Model */,
-				00D3A24F29AF7556003A13A6 /* Controllers */,
+				00D3A24029AF6B92003A13A6 /* LaunchScreen.storyboard */,
 				00D3A23529AF6B91003A13A6 /* AppDelegate.swift */,
+				00D3A24329AF6B92003A13A6 /* Info.plist */,
 			);
 			path = "Bosta-IOS-Task";
 			sourceTree = "<group>";
 		};
-		00D3A24929AF6D94003A13A6 /* Profile */ = {
+		00D3A24F29AF7556003A13A6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				00D3A24B29AF6DBC003A13A6 /* ProfileVC.swift */,
-				00D3A25629AF7FDA003A13A6 /* ProfileVC+TableView.swift */,
-				00D3A24C29AF6DBC003A13A6 /* ProfileVC.xib */,
 				009A59C529AFFE3400D3A3F7 /* myCell.swift */,
-				009A59C629AFFE3400D3A3F7 /* myCell.xib */,
 			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		00D3A24F29AF7556003A13A6 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				00D3A24929AF6D94003A13A6 /* Profile */,
-			);
-			path = Controllers;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		00D3A25029AF7569003A13A6 /* Model */ = {
@@ -152,7 +150,8 @@
 		00D3A25129AF757E003A13A6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				00D3A24029AF6B92003A13A6 /* LaunchScreen.storyboard */,
+				00D3A24C29AF6DBC003A13A6 /* ProfileVC.xib */,
+				009A59C629AFFE3400D3A3F7 /* myCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,9 +160,9 @@
 			isa = PBXGroup;
 			children = (
 				009A59B629AFADE100D3A3F7 /* APIServices.swift */,
-				009A59B829AFB13200D3A3F7 /* API.swift */,
 			);
-			path = Networking;
+			name = Networking;
+			path = ../../../Networking;
 			sourceTree = "<group>";
 		};
 		00D3A25429AF75A7003A13A6 /* Resources */ = {
@@ -174,20 +173,65 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		00D3A25529AF75BC003A13A6 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				00D3A24329AF6B92003A13A6 /* Info.plist */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
 		00D3A25829AF9921003A13A6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				00D3A25929AF9957003A13A6 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		00F7B7FF2AA9308600970BF4 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				00F7B8012AA930A900970BF4 /* Networking */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		00F7B8002AA9309300970BF4 /* Cycle */ = {
+			isa = PBXGroup;
+			children = (
+				00F7B8022AA930BD00970BF4 /* User */,
+			);
+			path = Cycle;
+			sourceTree = "<group>";
+		};
+		00F7B8012AA930A900970BF4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				009A59B829AFB13200D3A3F7 /* API.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		00F7B8022AA930BD00970BF4 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				00F7B8032AA930C700970BF4 /* Profile */,
+				00F7B8042AA930D300970BF4 /* Albums */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		00F7B8032AA930C700970BF4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				00D3A25329AF7595003A13A6 /* Networking */,
+				00D3A25129AF757E003A13A6 /* View */,
+				00D3A24F29AF7556003A13A6 /* Controller */,
+				00D3A25029AF7569003A13A6 /* Model */,
+				00D3A25829AF9921003A13A6 /* ViewModel */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		00F7B8042AA930D300970BF4 /* Albums */ = {
+			isa = PBXGroup;
+			children = (
+				0043AF2829B102AA00BE29C6 /* AlbumDetailsScreen */,
+			);
+			path = Albums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00D3A24E29AF6DBC003A13A6 /* ProfileVC.xib in Resources */,
+				0043AF2C29B102D100BE29C6 /* AlbumDetailsVC.xib in Resources */,
 				009A59C829AFFE3400D3A3F7 /* myCell.xib in Resources */,
 				00D3A24229AF6B92003A13A6 /* LaunchScreen.storyboard in Resources */,
 				00D3A23F29AF6B92003A13A6 /* Assets.xcassets in Resources */,
@@ -276,9 +321,9 @@
 				00D3A25C29AF9F05003A13A6 /* Album.swift in Sources */,
 				00D3A24D29AF6DBC003A13A6 /* ProfileVC.swift in Sources */,
 				009A59B729AFADE100D3A3F7 /* APIServices.swift in Sources */,
+				0043AF2B29B102D100BE29C6 /* AlbumDetailsVC.swift in Sources */,
 				009A59C729AFFE3400D3A3F7 /* myCell.swift in Sources */,
 				00D3A25E29AF9F6A003A13A6 /* User.swift in Sources */,
-				00D3A25729AF7FDA003A13A6 /* ProfileVC+TableView.swift in Sources */,
 				009A59C129AFB5C300D3A3F7 /* AlbumsData.swift in Sources */,
 				00D3A25A29AF9957003A13A6 /* ProfileViewModel.swift in Sources */,
 				00D3A23629AF6B91003A13A6 /* AppDelegate.swift in Sources */,
@@ -425,7 +470,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "/Users/a/Desktop/Bosta-IOS-Task/Bosta-IOS-Task/Config/Info.plist";
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -452,7 +497,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "/Users/a/Desktop/Bosta-IOS-Task/Bosta-IOS-Task/Config/Info.plist";
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
